@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(0, 18, 41);
+  color: rgb(182, 182, 182);
+  position: relative;
+}
+/* this section is  disable display for landscape screens , the periodic table is best viewed in landscape mood   */
+@media (orientation: portrait) {
+  .portraite-display {
+    text-align: center;
+    margin-top: 40vh;
+  }
+  .portraite-display i {
+    margin-top: 30px;
+    font-size: 100px;
+    transform: rotate(360deg);
+    animation: rotate 5s infinite linear;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .main-section {
+    display: none;
+  }
+}
+/*end of portraite screen   */
+
+/* landscape display */
+@media (orientation: landscape) {
+  .main-section {
+    width: 95vw;
+    height: 95vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  .portraite-display {
+    display: none;
+  }
+  .periodic-row-con {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1%;
+  }
+  .periodic-rows {
+    z-index: 2;
+    width: 5.3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 800;
+  }
+
+  /* Periodic Groups (column) */
+
+  .periodic-column-con {
+    display: flex;
+  }
+
+  /* columns containers */
+  .column-side-bar,
+  .group-1-elements,
+  .group-2-elements,
+  .group-3-elements,
+  .group-4-elements,
+  .group-5-elements,
+  .group-6-elements,
+  .group-7-elements,
+  .group-5-elements,
+  .group-8-elements,
+  .group-9-elements,
+  .group-10-elements,
+  .group-11-elements,
+  .group-12-elements,
+  .group-13-elements,
+  .group-14-elements,
+  .group-15-elements,
+  .group-16-elements,
+  .group-17-elements,
+  .group-18-elements {
+    height: 95vh;
+    width: 5.4vw;
+    position: absolute;
+    top: 0;
+  }
+
+  /* columns elemnets box general settings */
+  .periodic-column,
+  .group1,
+  .group2,
+  .group3,
+  .group4,
+  .group5,
+  .group6,
+  .group7,
+  .group8,
+  .group9,
+  .group10,
+  .group11,
+  .group12,
+  .group13,
+  .group14,
+  .group15,
+  .group16,
+  .group17,
+  .group18 {
+    border: 2px solid rgb(0, 18, 41);
+    height: 12.5%;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 2vw;
+    color: black;
+    font-weight: 900;
+    display: block;
+    cursor: pointer;
+    /* border: 1px solid red; */
+  }
+  .element-name {
+    /* position: absolute; */
+    bottom: 5px;
+    left: 0;
+    font-size: 2vh;
+    background-color: rgba(250, 200, 153, 0);
+    color: black;
+  }
+  /* group 1 box sepecific settings */
+  .group-1-elements,
+  .group-2-elements,
+  .group-3-elements,
+  .group-4-elements,
+  .group-5-elements,
+  .group-6-elements,
+  .group-7-elements,
+  .group-8-elements,
+  .group-9-elements,
+  .group-10-elements,
+  .group-11-elements,
+  .group-12-elements,
+  .group-13-elements,
+  .group-14-elements,
+  .group-15-elements,
+  .group-16-elements,
+  .group-17-elements,
+  .group-18-elements {
+    left: 5vw;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .group1 {
+    background-color: rgb(250, 200, 153);
+  }
+  .group1:hover {
+    transform: scale(0.9);
+  }
+  sup {
+    font-size: 1vw;
+    left: 2px;
+    color: black;
+    background-color: rgba(250, 200, 153, 0);
+  }
+  .group-1-elements .H {
+    background-color: rgb(250, 99, 29);
+  }
+
+  /* group 2 box sepecific settings */
+  .group-2-elements {
+    left: 10vw;
+  }
+  .group2 {
+    background-color: rgb(241, 169, 35);
+  }
+  .group2:hover {
+    transform: scale(0.9);
+  }
+  /* group 3 box sepecific settings */
+  .group-3-elements {
+    left: 15vw;
+  }
+  .group3 {
+    background-color: rgb(210, 243, 62);
+  }
+  .group3:hover {
+    transform: scale(0.9);
+  }
+  .group-3-elements .Ac {
+    background-color: rgb(29, 235, 250);
+  }
+
+  /* group 4 box sepecific settings */
+  .group-4-elements {
+    left: 20vw;
+  }
+  .group4 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group4:hover {
+    transform: scale(0.9);
+  }
+  /* group 5 box sepecific settings */
+  .group-5-elements {
+    left: 25vw;
+  }
+  .group5 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group5:hover {
+    transform: scale(0.9);
+  }
+  /* group 6 box sepecific settings */
+  .group-6-elements {
+    left: 30vw;
+  }
+  .group6 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group6:hover {
+    transform: scale(0.9);
+  }
+  /* group 7 box sepecific settings */
+  .group-7-elements {
+    left: 35vw;
+  }
+  .group7 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group7:hover {
+    transform: scale(0.9);
+  }
+  /* group 8 box sepecific settings */
+  .group-8-elements {
+    left: 40vw;
+  }
+  .group8 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group8:hover {
+    transform: scale(0.9);
+  }
+  /* group 9 box sepecific settings */
+  .group-9-elements {
+    left: 45vw;
+  }
+  .group9 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group9:hover {
+    transform: scale(0.9);
+  }
+  /* group 10 box sepecific settings */
+  .group-10-elements {
+    left: 50vw;
+  }
+  .group10 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group10:hover {
+    transform: scale(0.9);
+  }
+  /* group 11 box sepecific settings */
+  .group-11-elements {
+    left: 55vw;
+  }
+  .group11 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group11:hover {
+    transform: scale(0.9);
+  }
+  /* group 12 box sepecific settings */
+  .group-12-elements {
+    left: 60vw;
+  }
+  .group12 {
+    background-color: rgb(228, 143, 245);
+  }
+  .group12:hover {
+    transform: scale(0.9);
+  }
+  /* group 13 box sepecific settings */
+  .group-13-elements {
+    left: 65vw;
+  }
+  .group13 {
+    background-color: rgb(233, 149, 110);
+  }
+  .group13:hover {
+    transform: scale(0.9);
+  }
+  /* group 14 box sepecific settings */
+  .group-14-elements {
+    left: 70vw;
+  }
+  .group14 {
+    background-color: rgb(233, 149, 110);
+  }
+  .group14:hover {
+    transform: scale(0.9);
+  }
+  /* group 15 box sepecific settings */
+  .group-15-elements {
+    left: 75vw;
+  }
+  .group15 {
+    background-color: rgb(233, 149, 110);
+  }
+  .group15:hover {
+    transform: scale(0.9);
+  }
+  /* group 16 box sepecific settings */
+  .group-16-elements {
+    left: 80vw;
+  }
+  .group16 {
+    background-color: rgb(233, 149, 110);
+  }
+  .group16:hover {
+    transform: scale(0.9);
+  }
+  /* group 17 box sepecific settings */
+  .group-17-elements {
+    left: 85vw;
+  }
+  .group17 {
+    background-color: rgb(233, 149, 110);
+  }
+  .group17:hover {
+    transform: scale(0.9);
+  }
+  /* group 18 box sepecific settings */
+  .group-18-elements {
+    left: 90vw;
+  }
+  .group18 {
+    background-color: white;
+  }
+  .group18:hover {
+    transform: scale(0.9);
+  }
+  /* special colors for different boxes */
+  .B {
+    background-color: brown;
+  }
+  .C {
+    background-color: rgb(250, 99, 29);
+  }
+  .invincible {
+    background-color: rgba(240, 248, 255, 0);
+  }
+
+  /* element-display-container */
+
+  /* container  carryintg all element display */
+  .display-box {
+    z-index: 5;
+    width: 45%;
+    margin-left: 20%;
+    top: 15%;
+    position: relative;
+  }
+
+  .element-display-container1,
+  .element-display-container3,
+  .element-display-container11,
+  .element-display-container19,
+  .element-display-container37,
+  .element-display-container55,
+  .element-display-container87 {
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    display: none;
+  }
+
+  .element-display-container1.active,
+  .element-display-container3.active,
+  .element-display-container11.active,
+  .element-display-container19.active,
+  .element-display-container37.active,
+  .element-display-container55.active,
+  .element-display-container87.active {
+    display: block;
+    animation: display 1s linear;
+  }
+  @keyframes display {
+    0% {
+      transform: scale(0.2);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .group1-element-box {
+    width: 30%;
+    left: 0;
+    height: 30vh;
+    text-align: center;
+    position: absolute;
+    background-color: rgb(250, 99, 29);
+  }
+
+  .group1-element-box sup {
+    top: 8px;
+  }
+  .group1-element-box h1 {
+    color: black !important;
+    font-size: 15vh;
+    background-color: rgb(250, 99, 29);
+  }
+  .group1-element-box p {
+    color: black !important;
+    background-color: rgb(250, 99, 29);
+  }
+  .element-details {
+    height: 100%;
+    margin-left: auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .element-details p {
+    height: 5vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    justify-content: space-between;
+    display: flex;
+    padding: 2px 2px;
+    color: black;
+    font-size: 12px;
+    width: 95%;
+    font-weight: 600;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+  }
+  .element-details span {
+    color: black;
+    padding-right: 5px;
+    font-size: 10px;
+    background-color: rgb(255, 255, 255);
+  }
+}
