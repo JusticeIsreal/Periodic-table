@@ -375,7 +375,15 @@
   .element-display-container19,
   .element-display-container37,
   .element-display-container55,
-  .element-display-container87 {
+  .element-display-container87,
+  .element-display-container4,
+  .element-display-container12,
+  .element-display-container20,
+  .element-display-container38,
+  .element-display-container56,
+  .element-display-container88,
+  .element-display-container21,
+  .element-display-container39 {
     z-index: 5;
     width: 100%;
     top: 0;
@@ -389,7 +397,15 @@
   .element-display-container19.active,
   .element-display-container37.active,
   .element-display-container55.active,
-  .element-display-container87.active {
+  .element-display-container87.active,
+  .element-display-container4.active,
+  .element-display-container12.active,
+  .element-display-container20.active,
+  .element-display-container38.active,
+  .element-display-container56.active,
+  .element-display-container88.active,
+  .element-display-container21.active,
+  .element-display-container39.active {
     display: block;
     animation: display 1s linear;
   }
@@ -404,6 +420,8 @@
       transform: scale(1);
     }
   }
+
+  /* element detials property */
   .group1-element-box {
     width: 30%;
     left: 0;
@@ -412,6 +430,15 @@
     position: absolute;
     background-color: rgb(250, 99, 29);
   }
+  .light {
+    background-color: rgb(250, 200, 153);
+  }
+  .yellow {
+    background-color: rgb(241, 169, 35);
+  }
+  .bright-yellow{
+   background-color: rgb(210, 243, 62);
+  }
 
   .group1-element-box sup {
     top: 8px;
@@ -419,11 +446,11 @@
   .group1-element-box h1 {
     color: black !important;
     font-size: 15vh;
-    background-color: rgb(250, 99, 29);
+    background-color: rgba(250, 99, 29, 0);
   }
   .group1-element-box p {
     color: black !important;
-    background-color: rgb(250, 99, 29);
+    background-color: rgba(250, 99, 29, 0);
   }
   .element-details {
     height: 100%;
