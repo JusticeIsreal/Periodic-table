@@ -383,7 +383,13 @@
   .element-display-container56,
   .element-display-container88,
   .element-display-container21,
-  .element-display-container39 {
+  .element-display-container39,
+  .element-display-container22,
+  .element-display-container40,
+  .element-display-container72,
+  .element-display-container104,
+  .element-display-container23,
+  .element-display-container41 {
     z-index: 5;
     width: 100%;
     top: 0;
@@ -405,7 +411,13 @@
   .element-display-container56.active,
   .element-display-container88.active,
   .element-display-container21.active,
-  .element-display-container39.active {
+  .element-display-container39.active,
+  .element-display-container22.active,
+  .element-display-container40.active,
+  .element-display-container72.active,
+  .element-display-container104.active,
+  .element-display-container23.active,
+  .element-display-container41.active {
     display: block;
     animation: display 1s linear;
   }
@@ -413,14 +425,19 @@
     0% {
       transform: scale(0.2);
     }
-    50% {
+    50% { 
       transform: scale(1.1);
     }
     100% {
       transform: scale(1);
     }
   }
-
+i{
+  background-color: rgba(0, 0, 0, 0);
+  color: red;
+  font-size: 10px;
+  font-weight: 900;
+}
   /* element detials property */
   .group1-element-box {
     width: 30%;
@@ -438,6 +455,9 @@
   }
   .bright-yellow{
    background-color: rgb(210, 243, 62);
+  }
+  .bright-pink{
+     background-color: rgb(228, 143, 245);
   }
 
   .group1-element-box sup {
